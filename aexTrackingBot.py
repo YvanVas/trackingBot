@@ -2,7 +2,7 @@ import logging
 # Importar libreria de precios de la yerba
 from aexRequests import *
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
-from config import config['TOKEN']
+from config import config
 
 # Iniciar Loggin
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
