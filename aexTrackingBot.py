@@ -2,7 +2,7 @@ import logging
 # Importar libreria de precios de la yerba
 from aexRequests import *
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
-
+from config import config['TOKEN']
 
 # Iniciar Loggin
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -38,7 +38,7 @@ def echo(update, context):
 def main():
     """Inicia el bot con un TOKEN"""
     updater = Updater(
-        "TOKEN", use_context=True)
+        config['TOKEN'], use_context=True)
 
     dp = updater.dispatcher
 
